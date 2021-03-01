@@ -21,8 +21,8 @@ const Hero: React.FC<Props> = () => {
     return (
         <main>
             <div className="flex flex-col items-center justify-center mt-20">
-                <div className="container flex flex-row w-full justify-between items-center h-1/6">
-                    <h1 className="heading w-1/2 font-sora font-bold" style={{ fontSize: 50, wordBreak: "break-word" }} >{heroText}</h1>
+                <div className="container flex flex-col md:flex-row w-full justify-between items-start space-y-10 md:space-y-0 md:items-center">
+                    <h1 className="heading w-full md:w-1/2 font-sora font-bold text-3xl md:text-5xl" >{heroText}</h1>
                     <button className="bg-darkerBlue font-sora text-xl rounded-xl p-4 outline-none focus:outline-none font-medium" style={{ fontSize: 25 }}  >{btnText}</button>
                 </div>
                 <div className="container  toolbar w-full mt-20 rounded-4xl items-center" style={{ backgroundColor: "#0B0F39", height: "700px" }}>

@@ -7,7 +7,7 @@ interface Props {
 }
 const Cards: React.FC<Props> = ({ cardTitle, cardDescription, svg }) => {
     return (
-        <li className="col-span-1 flex text-white flex-col text-center border border-cardBorderDark hover:bg-hoverblue cursor-pointer rounded-lg hover:shadow-2xl divide-gray-200" style={{ height: "300px", minHeight:"auto" }}>
+        <li className="col-span-1 flex text-white flex-col text-center border border-cardBorderDark hover:bg-hoverblue cursor-pointer h-auto p-5 rounded-lg hover:shadow-2xl divide-gray-200">
             <div className="flex-1 justify-start items-start flex flex-col p-8">
                 {svg}
                 <div>
