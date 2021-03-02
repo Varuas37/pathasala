@@ -2,7 +2,7 @@ import React, { Fragment, useState } from 'react'
 import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom'
 import { heroText, btnText, Questions } from "./data"
-import "./quiz.css"
+
 
 interface Props {
 
@@ -23,11 +23,11 @@ const Hero: React.FC<Props> = () => {
             <div className="flex flex-col items-center justify-center mt-20">
                 <div className="container flex flex-col md:flex-row w-full justify-between items-start space-y-10 md:space-y-0 md:items-center">
                     <h1 className="heading w-full md:w-1/2 font-sora font-bold text-3xl md:text-5xl" >{heroText}</h1>
-                    <button className="bg-darkerBlue font-sora text-xl rounded-xl p-4 outline-none focus:outline-none font-medium" style={{ fontSize: 25 }}  >{btnText}</button>
+                    <Link to="/login" className="bg-darkerBlue font-sora text-xl rounded-xl p-4 outline-none focus:outline-none font-medium" style={{ fontSize: 25 }}  >{btnText}</Link>
                 </div>
                 <div className="container  toolbar w-full mt-20 rounded-4xl items-center" style={{ backgroundColor: "#0B0F39", height: "700px" }}>
                     {/* Toolbar tip */}
-                    <div className="toolbar relative bg-darkerBlue w-full h-9 rounded-4xl">
+                    <div className="toolbar relative bg-darkerBlue w-full h-9 rounded-4xl" style={{ borderTopLeftRadius: "15px", borderTopRightRadius: "15px" }}>
                         <div className="absolute ml-4 mt-3">
                             <div className="circles absolute rounded-full" style={{ height: "15px", width: "15px", backgroundColor: "#F65E58" }}></div>
                             <div className="circles absolute rounded-full" style={{ height: "15px", width: "15px", marginLeft: "20px", backgroundColor: "#F9BD2F" }}></div>
@@ -38,7 +38,7 @@ const Hero: React.FC<Props> = () => {
                     <div className=" flex flex-row items-center w-full">
                         <div className="hidden md:block ml-5 mt-3 rounded-xl bg-blueshade w-1/6" style={{ height: "640px" }}></div>
                         {/* Quiz Question requires height of 600 on Smaller screen and a 540 on bigger */}
-                        <div className="flex flex-col w-full items-center justify-center" style={{ height: 600 }}> 
+                        <div className="flex flex-col w-full items-center justify-center" style={{ height: 600 }}>
 
                             <div className="w-5/6 justify-end items-center space-x-2 flex flex-row mt-5 md:mt-0 mb-2 md:mb-5">
                                 <div className="bg-red-400 rounded cursor-pointer p-1">Past Question</div>

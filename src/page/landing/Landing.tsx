@@ -14,7 +14,6 @@ const Landing: React.FC<Props> = () => {
         <div className="flex overflow-none items-center flex-col p-5 w-full bg-darkblue text-white">
             <Hero />
             <Features/>
-            
         </div>
         <Footer/>
         </>
